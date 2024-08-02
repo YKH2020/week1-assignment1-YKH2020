@@ -57,11 +57,11 @@ files = {
     "objects": 55,
     "packed-refs refs": 120,
 }
-file_sizes = files.values
+file_sizes = files.values()
 
 # from the same `files` dictionary, define the file_names variable so that it holds
 # the names only
-file_names = files.keys
+file_names = files.keys()
 
 
 # from the list of first names below write code that gets rid of Melvin and Carlos
@@ -79,8 +79,10 @@ first_names = [
     'Michael'
  ]
 
-new_first_names = first_names.pop(1)
-new_first_names = first_names.pop(-2)
+first_names.pop(1)
+first_names.pop(-2)
+
+new_first_names = first_names
 
 # from the same list of first names, assign the last 4 names to the last_four_names
 first_names = [
